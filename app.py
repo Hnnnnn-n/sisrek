@@ -11,7 +11,7 @@ titles = df["title"]
 artists = df["artist"]
 tfidf_matrix = df.iloc[:, 2:].values  # TF-IDF mulai kolom ke-2
 
-st.title("Sistem Rekomendasi Musik 🎵")
+st.title("Sistem Rekomendasi Musik")
 
 # Pilih lagu
 selected_title = st.selectbox("Pilih Lagu:", titles)
@@ -29,3 +29,4 @@ if st.button("Rekomendasikan"):
     st.subheader("Rekomendasi Lagu:")
     for i in top_indices:
         st.write(f"**{titles[i]}** - {artists[i]} (Similarity: {sim_scores[i]:.4f})")
+
