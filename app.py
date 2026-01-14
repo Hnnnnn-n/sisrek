@@ -29,7 +29,7 @@ if st.button("Rekomendasikan"):
         <style>
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(4, 1fr));
             gap: 16px;
         }
         .card {
@@ -74,3 +74,4 @@ if st.button("Rekomendasikan"):
     cards_html += "</div>"
 
     st.markdown(cards_html, unsafe_allow_html=True)
+
